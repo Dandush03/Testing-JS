@@ -1,11 +1,13 @@
 function reverseString(obj) {
-  obj.forEach(e => {
-    console.log(e);
-  });
+  let result = '';
+  for (let i = obj.length; i > 0; i -= 1) {
+    result += obj[i - 1];
+  }
+  return result;
 }
 
-describe('Capitalize a String', () => {
-  it('It Should return Capitalize a given value', () => {
+describe('Reverse a String', () => {
+  it('It Should return Reverse a given value', () => {
     expect(reverseString('test')).toBe('tset');
   });
 });
