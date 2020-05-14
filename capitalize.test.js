@@ -2,10 +2,8 @@ function capitalizeString(obj) {
   return obj[0].toUpperCase() + obj.slice(1);
 }
 
-describe('test', () => {
-  capitalizeString('test');
-  it('It Should return "Hello World!"', () => {
-    const test = 'Hello World!';
-    expect(test).toBe('Hello World!');
+describe('Capitalize a String', () => {
+  it('It Should return Capitalize a given value', () => {
+    expect(capitalizeString('test')).toBe('Test');
   });
 });
